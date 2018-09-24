@@ -1,0 +1,91 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context="net.webcontrol.app.siteparserfinal.YahooJpParser">
+
+    <Button
+        android:id="@+id/parseYJ"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Получить данные"
+        android:layout_alignRight="@+id/listViewDataYJ"
+        android:layout_alignEnd="@+id/listViewDataYJ"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:background="#333333"
+        android:textColor="#acacac" />
+    <ListView
+        android:id="@+id/listViewDataYJ"
+        android:layout_width="wrap_content"
+        android:layout_height="fill_parent"
+        android:layout_below="@+id/parseYJ"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="Count"
+        android:id="@+id/countYJ"
+        android:layout_alignParentBottom="true"
+        android:layout_alignRight="@+id/listViewDataYJ"
+        android:layout_alignEnd="@+id/listViewDataYJ"
+        android:textColor="#4070ff"/>
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/history_bt"
+        android:id="@+id/historyYJ"
+        android:layout_below="@+id/parseYJ"
+        android:layout_alignRight="@+id/listViewDataYJ"
+        android:layout_alignEnd="@+id/listViewDataYJ"
+        android:background="#E71328"
+        android:textColor="#ffffff"
+        android:visibility="invisible"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="Page: 1"
+        android:id="@+id/pageYJ"
+        android:layout_above="@+id/countYJ"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:textColor="#4070ff"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Result: "
+        android:id="@+id/resultYJ"
+        android:visibility="invisible"
+        android:textColor="#E71328"
+        android:layout_above="@+id/listViewDataYJ"
+        android:layout_centerHorizontal="true" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="@string/error_message"
+        android:id="@+id/errorView"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        android:visibility="invisible"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/error_bt"
+        android:id="@+id/errorBt"
+        android:layout_below="@+id/errorView"
+        android:layout_centerHorizontal="true"
+        android:visibility="invisible"/>
+
+</RelativeLayout>

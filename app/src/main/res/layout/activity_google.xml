@@ -1,0 +1,79 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context="net.webcontrol.app.siteparserfinal.GoogleParser"
+    android:background="@drawable/main_header_selector">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Result: "
+        android:id="@+id/resultG"
+        android:visibility="invisible"
+        android:layout_centerHorizontal="true"
+        android:textColor="#ffffff"/>
+
+    <ListView
+        android:id="@+id/listViewDataG"
+        android:layout_width="wrap_content"
+        android:layout_height="fill_parent"
+        android:layout_below="@+id/resultG" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="Count"
+        android:id="@+id/countG"
+        android:layout_alignParentBottom="true"
+        android:layout_alignRight="@+id/listViewDataG"
+        android:layout_alignEnd="@+id/listViewDataG"
+        android:textColor="#ffffff"/>
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/history_bt"
+        android:id="@+id/historyG"
+        android:layout_below="@+id/resultG"
+        android:layout_alignRight="@+id/listViewDataG"
+        android:layout_alignEnd="@+id/listViewDataG"
+        android:visibility="invisible" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="Page: 1"
+        android:id="@+id/pageG"
+        android:layout_above="@+id/countG"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:textColor="#ffffff"/>
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="@string/error_message"
+        android:id="@+id/errorView"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        android:visibility="invisible"/>
+
+    <Button
+        android:id="@+id/errorBt"
+        android:layout_width="65dp"
+        android:layout_height="37dp"
+        android:layout_below="@+id/errorView"
+        android:layout_centerHorizontal="true"
+        android:text="@string/error_bt"
+        android:visibility="invisible" />
+
+</RelativeLayout>

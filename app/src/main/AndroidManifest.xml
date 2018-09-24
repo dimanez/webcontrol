@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="net.webcontrol.app.siteparserfinal" >
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="com.android.vending.BILLING" />
+    <uses-permission android:name="android.permission.DISABLE_KEYGUARD"/>
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/wclogo"
+        android:label="Web Control"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/title_activity_activity_two"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".TitleActivity"
+            android:label="@string/title_activity_title" >
+        </activity>
+        <activity
+            android:name=".BingParser"
+            android:label="Bing"
+            android:keepScreenOn="true"
+            android:screenOrientation="portrait">
+        </activity>
+        <activity
+            android:name=".GoogleParser"
+            android:label="@string/title_activity_google"
+            android:theme="@style/GoogleTheme"
+            android:keepScreenOn="true"
+            android:screenOrientation="portrait">
+        </activity>
+        <activity
+            android:name=".YandexParser"
+            android:label="@string/title_activity_yandex"
+            android:keepScreenOn="true"
+            android:screenOrientation="portrait">
+        </activity>
+        <activity
+            android:name=".YahooParser"
+            android:label="@string/title_activity_yahoo_parser"
+            android:keepScreenOn="true"
+            android:screenOrientation="portrait">
+        </activity>
+        <activity
+            android:name=".databases.ResultsActivity"
+            android:label="@string/title_activity_results" >
+        </activity>
+        <activity
+            android:name=".dataloader.InfoActivity"
+            android:label="@string/title_activity_info"
+            android:screenOrientation="portrait">
+        </activity>
+        <activity
+            android:name=".AolParser"
+            android:label="@string/title_activity_aol_parser"
+            android:keepScreenOn="true"
+            android:screenOrientation="portrait">
+        </activity>
+        <!-- ask close
+        <activity
+            android:name=".AskParser"
+            android:label="@string/title_activity_ask_parser"
+            android:keepScreenOn="true"
+            android:screenOrientation="portrait">
+        </activity>
+        maybe load it -->
+        <activity
+            android:name=".BaiduParser"
+            android:label="@string/title_activity_baidu_parser"
+            android:keepScreenOn="true"
+            android:screenOrientation="portrait">
+        </activity>
+        <activity
+            android:name=".YahooJpParser"
+            android:label="@string/title_activity_yahoo_jp_parser"
+            android:keepScreenOn="true"
+            android:screenOrientation="portrait">
+        </activity>
+
+        <!--  Сервис автоматической проверки, реализовать в следующих патчах
+        <receiver
+            android:name=".service.Controller"
+            android:process=":remote" >
+        </receiver>
+
+        <service
+            android:name=".service.ServiceController"
+            android:enabled="true"
+            android:process=":service_controller" >
+        </service>
+
+        <receiver android:name=".service.AutoStart" >
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+            </intent-filter>
+        </receiver>
+
+        <activity
+            android:name=".firstSettings.SettingService"
+            android:label="@string/title_activity_setting_service" >
+        </activity>
+        -->
+
+        <!-- This meta-data tag is required to use Google Play Services. -->
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+
+        <activity
+            android:name=".ads_control_and_menu.AdsActivity"
+            android:label="@string/title_activity_ads" >
+        </activity> <!-- Include the AdActivity configChanges and theme. -->
+        <activity
+            android:name="com.google.android.gms.ads.AdActivity"
+            android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize"
+            android:theme="@android:style/Theme.Translucent" />
+        <activity
+            android:name=".ads_control_and_menu.ActivatedFull"
+            android:label="@string/title_activity_activated_full"
+            android:screenOrientation="portrait">
+        </activity>
+        <activity
+            android:name=".ads_control_and_menu.SendMail"
+            android:label="@string/title_activity_send_mail" >
+        </activity>
+        <activity
+            android:name=".ads_control_and_menu.AboutApp"
+            android:label="@string/title_activity_about_app" >
+        </activity>
+    </application>
+
+</manifest>

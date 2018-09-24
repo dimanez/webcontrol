@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">WebControl</string>
+    <string name="action_item1">О приложении</string>
+    <string name="action_item2">Оценить</string>
+    <string name="action_item3">Поддержка</string>
+    <string name="action_settings">Купить</string>
+    <string name="data_bt">Данные</string>
+    <string name="delete_bt">Удалить</string>
+    <string name="edit_textUrl">Введите Url вашего сайта</string>
+    <string name="error_bt">Ошибка</string>
+    <string name="error_message">Вы имеете проблемы с сетью.\nПроверьте подключение к интернету.\nИли используйте прокси сервер.</string>
+    <string name="history_bt">История</string>
+    <string name="refresh_bt">Обновить</string>
+    <string name="send_mail">Если при работе приложения возникает какая-либо ошибка, пожалуйста, сообщите нам об этом. Кроме того, оставить свои пожелания, мы рассмотрим их. \nЕсли вы пишете из другого устройства, пожалуйста, укажите модель и версию Android, где возникают ошибки.</string>
+    <string name="start_bt">Старт</string>
+    <string name="text_viewTKw">Осуществлять поиск по запросу</string>
+    <string name="title_activity_about_app">О приложении</string>
+    <string name="title_activity_activated_full">Активация</string>
+    <string name="title_activity_info">Информация</string>
+    <string name="title_activity_results">История</string>
+    <string name="title_activity_title">Запрос</string>
+    <string name="title_activity_send_mail">Поддержка</string>
+    <string name="title_enter">Введите условия поиска, чтобы найти ваш сайт в выбранной вами поисковой системе.</string>
+    <string name="title_bt">Запрос</string>
+    <string name="radio_buttonYJP"><![CDATA[
+<html>
+<body>
+<p>Самая популярная поисковикая система Японии.</p>
+<p>Если у вас есть какие-либо проблемы с работой приложения, обязательно свяжитесь с нами по <a href=mailto:contact@web-control.xyz>e-mail</a>.<br>
+Дополнительная информация на нашем <a href=http://web-control.xyz/faq>сайте</a>.</p>
+</body>
+</html>
+]]></string>
+    <string name="radio_buttonBaidu"><![CDATA[
+<html>
+<body>
+<p>Самая популярная поисковая система Китая.</p>
+<p>Если у вас есть какие-либо проблемы с работой приложения, обязательно свяжитесь с нами по <a href=mailto:contact@web-control.xyz>e-mail</a>.<br>
+Дополнительная информация на нашем <a href=http://web-control.xyz/faq>сайте</a>.</p>
+</body>
+</html>
+]]></string>
+    <string name="about_app">Приложение, предназначенное для поиска позиций сайта по определенному запросу в реальном времени. Вы можете осуществлять поиск по самым популярным поисковым системам (в будущем будет добавлены другие поисковые системы).\nОсобенности приложения:\n- Поиск позиций сайта ведется в реальном времени. В то время как инструменты веб-мастера имеют задержку (обычно это 2-3 дня).\n- Узнайте внешние ссылки, Google PR, Yandex tIC, проиндексированные страницы.
+        \n \nВ будущих обновлениях:\n- автоматическая проверка\n- поддержка регионов поисковиков\n- добавление поисковых систем</string>
+    <string name="text_viewStep">Шаг: </string>
+    <string name="send_bt">Отправить</string>
+    <string name="activated_full_tw">Полная версия приложения, убирает ограничения.\nОсобенности:\n- Отсутствие таймера\n- Выбор шага (от 11 до 250). Кроме Yahoo (его лимит 150)\n- Отсутствие рекламы</string>
+    <string name="buying_ok">Покупка произошла. Пожалуйста, перезапустите приложение</string>
+    <string name="radio_buttonG"><![CDATA[
+<html>
+<body>
+<p><font color="red">Внимание:</font> При частом спаме запросов
+ рекомендуется использовать <a href=https://play.google.com/store/search?q=proxy>Прокси</a> клиент,
+ что-бы избежать временных санкций от поисковой системы
+ в виде ввода каптчи.</p>
+<p>Дополнительная информация на нашем <a href=http://web-control.xyz/faq>сайте</a>.</p>
+</body>
+</html>
+]]></string>
+    <string name="radio_buttonY"><![CDATA[
+<html>
+<body>
+<p>Самая популярная поисковая система России.<br><font color="red">Внимание:</font> При частом спаме запросов
+ рекомендуется использовать <a href=https://play.google.com/store/search?q=proxy>Прокси</a> клиент,
+ что-бы избежать временных санкций от поисковой системы
+ в виде ввода каптчи.</p>
+<p>Если у вас есть какие-либо проблемы с работой приложения, обязательно свяжитесь с нами по <a href=mailto:contact@web-control.xyz>e-mail</a>.</p>
+</body>
+</html>
+]]></string>
+    <string name="radio_buttonB"><![CDATA[
+Вторая по популярности поисковая система.<br>
+<p>Если у вас есть какие-либо проблемы с работой приложения, обязательно свяжитесь с нами по <a href=mailto:contact@web-control.xyz>e-mail</a>.<br>
+Дополнительная информация на нашем <a href=http://web-control.xyz/faq>сайте</a>.</p>
+]]></string>
+    <string name="radio_buttonAol"><![CDATA[
+<html>
+<body>
+<p>Американская поисковая система.<br>
+ Результат вывода зависит от вашего региона.
+ Рекомендуется использовать <a href=https://play.google.com/store/search?q=proxy>Прокси</a> клиент с возможностью выбора региона,
+ что-бы получить желаемый результат.</p>
+<p>Если у вас есть какие-либо проблемы с работой приложения, обязательно свяжитесь с нами по <a href=mailto:contact@web-control.xyz>e-mail</a>.<br>
+Дополнительная информация на нашем <a href=http://web-control.xyz/faq>сайте</a>.</p>
+</body>
+</html>
+]]></string>
+</resources>

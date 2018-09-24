@@ -1,0 +1,89 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context="net.webcontrol.app.siteparserfinal.YandexParser">
+
+    <Button
+        android:id="@+id/parseY"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Получить данные"
+        android:layout_alignRight="@+id/listViewDataY"
+        android:layout_alignEnd="@+id/listViewDataY"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+    <ListView
+        android:id="@+id/listViewDataY"
+        android:layout_width="wrap_content"
+        android:layout_height="fill_parent"
+        android:layout_below="@+id/parseY"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="Count"
+        android:id="@+id/countY"
+        android:layout_alignParentBottom="true"
+        android:layout_alignRight="@+id/listViewDataY"
+        android:layout_alignEnd="@+id/listViewDataY"
+        android:textColor="#FA2828"/>
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/history_bt"
+        android:id="@+id/historyY"
+        android:layout_below="@+id/parseY"
+        android:layout_alignRight="@+id/listViewDataY"
+        android:layout_alignEnd="@+id/listViewDataY"
+        android:visibility="invisible"
+        android:background="#ffdb4c"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="Page: 1"
+        android:id="@+id/pageY"
+        android:layout_above="@+id/countY"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:textColor="#FA2828"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Result: "
+        android:id="@+id/resultY"
+        android:textColor="#FA2828"
+        android:visibility="invisible"
+
+        android:layout_above="@+id/listViewDataY"
+        android:layout_centerHorizontal="true" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="@string/error_message"
+        android:id="@+id/errorView"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        android:visibility="invisible"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/error_bt"
+        android:id="@+id/errorBt"
+        android:layout_below="@+id/errorView"
+        android:layout_centerHorizontal="true"
+        android:visibility="invisible"/>
+
+</RelativeLayout>

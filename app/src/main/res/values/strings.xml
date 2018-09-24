@@ -1,0 +1,143 @@
+<resources>
+    <string name="app_name">WebControl</string>
+
+
+    <string name="title_activity_activity_two" translatable="false">WebControl</string>
+    <string name="radioGoogle" translatable="false">Google</string>
+    <string name="title_activity_title">Request</string>
+    <string name="title_activity_google" translatable="false">Google</string>
+    <string name="title_activity_yandex" translatable="false">Yandex</string>
+    <string name="title_activity_yahoo_parser" translatable="false">Yahoo</string>
+    <string name="title_activity_new_text_parser" translatable="false">NewTextParser</string>
+    <string name="title_activity_results">History</string>
+    <string name="title_activity_result2" translatable="false">Result2</string>
+    <string name="title_activity_info">Site Info</string>
+    <string name="title_activity_aol_parser" translatable="false">Aol</string>
+    <string name="title_activity_ask_parser" translatable="false">Ask</string>
+    <string name="title_activity_baidu_parser" translatable="false">Baidu</string>
+    <string name="title_activity_yahoo_jp_parser" translatable="false">YahooJp</string>
+    <string name="title_activity_mail_parser" translatable="false">Mail</string>
+    <string name="title_activity_setting_service" translatable="false">SettingService</string>
+    <string name="title_activity_ads" translatable="false">AdsActivity</string>
+    <string name="error_message">You have network problems.\nCheck your internet connection.\nOr use a proxy server.</string>
+    <string name="title_enter">Enter your search terms to find your site in the search engine you selected.</string>
+
+    <!-- MainPage Start-->
+    <string name="edit_textUrl">Send your Url</string>
+    <string name="text_viewTKw">Perform a request for</string>
+    <string name="text_viewStep">Step: </string>
+    <string name="radio_buttonG"><![CDATA[
+<html>
+<body>
+<p><font color="red">Attention:</font> Frequent spam-requests
+ it is recommended to use a <a href=https://play.google.com/store/search?q=proxy>proxy</a> client
+ to avoid time penalties from the search engine
+ as entering captcha.</p>
+<p>Additional information on our <a href=http://web-control.xyz/faq>website</a>.</p>
+</body>
+</html>
+]]></string>
+    <string name="radio_buttonB"><![CDATA[
+<html>
+<body>
+<p>The second most popular search engine.<br>
+If you have any problems with the work of the application, be sure to contact us at <a href=mailto:contact@web-control.xyz>e-mail</a>.</p>
+<p>Additional information on our <a href=http://web-control.xyz/faq>website</a>.</p>
+</body>
+</html>
+]]></string>
+    <string name="radio_buttonAol"><![CDATA[
+<html>
+<body>
+<p>The American search engine.<br>
+The result of output depends on your region.
+ It is recommended to use a proxy client to select a region,
+ to get the desired result.</p>
+<p>Additional information on our <a href=http://web-control.xyz/faq>website</a>.</p>
+</body>
+</html>
+]]></string>
+    <string name="radio_buttonAsk" translatable="false">Ask text</string>
+    <string name="radio_buttonY"><![CDATA[
+<html>
+<body>
+<p>The most popular search engine in Russia.<br>
+<font color="red">Attention:</font> Frequent spam-requests
+ it is recommended to use a <a href=https://play.google.com/store/search?q=proxy>proxy</a> client
+ to avoid time penalties from the search engine
+ as entering captcha.</p>
+<p>Additional information on our <a href=http://web-control.xyz/faq>website</a>.</p>
+</body>
+</html>
+]]></string>
+    <string name="radio_buttonBaidu"><![CDATA[
+<html>
+<body>
+<p>The most popular search engine in Chine.<br>
+If you have any problems with the work of the application, be sure to contact us at <a href=mailto:contact@web-control.xyz>e-mail</a>.</p>
+<p>Additional information on our <a href=http://web-control.xyz/faq>website</a>.</p>
+</body>
+</html>
+]]></string>
+    <string name="radio_buttonYJP"><![CDATA[
+<html>
+<body>
+<p>The most popular search engine in Japan.<br>
+If you have any problems with the work of the application, be sure to contact us at <a href=mailto:contact@web-control.xyz>e-mail</a>.</p>
+<p>Additional information on our <a href=http://web-control.xyz/faq>website</a>.</p>
+</body>
+</html>
+]]></string>
+    <!-- End-->
+    
+    <!-- Buttons Start-->
+    <string name="start_bt">Start</string>
+    <string name="history_bt">History</string>
+    <string name="title_bt">Request</string>
+    <string name="data_bt">Site data</string>
+    <string name="delete_bt">Delete</string>
+    <string name="refresh_bt">Refresh</string>
+    <string name="error_bt">Error</string>
+    <string name="send_bt">Send</string>
+    <!--End-->
+
+    <!--Menu-->
+    <string name="action_settings">Full</string>
+    <string name="action_item1">About App</string>
+    <string name="action_item2">Rating</string>
+    <string name="action_item3">Support</string>
+    <string name="send_mail">If any error occurs while the application is running on your device, please let us know. Also, leave your wishes, we will review them.\nIf you write from another device, please specify the model and version of the device android where errors occur.</string>
+    <string name="about_app">An application designed to search for a site for a particular query positions in real time. You can follow any responses to search for the most popular search engines (currently 6 searchers from different regions).\nParticular application:\n- Search the site positions is carried out in real time. While webmaster tools are delayed (usually 2-3 days).\n- Get external links, Google PR, Yandex TCI, indexed pages.\n\nIntuitive interface:\n1.Enter the url \n2.Press "Request"(min 4 symbols) \n3.Press on the "Start"
+    \n\n	In the future it will be realized:\n
+	- Support of available regions for search systems\n
+	- Automatic verification\n
+	- Adding the search systems</string>
+    <string name="activated_full_tw">The full version of the application, removes limitations.\nFeatures:\n- No timer\n- Step Selection (11 to 250). Except Yahoo (its limit of 150)\n- No advertising</string>
+    <string name="buying_ok">Buying occurred. Please restart the application</string>
+
+    <!-- Spinner-->
+    <string-array name="searcherlist">
+        <item>All</item>
+        <item>Google</item>
+        <item>Bing</item>
+        <item>Aol</item>
+        <item>Ask</item>
+        <item>Yandex</item>
+        <item>Baidu</item>
+        <item>YahooJp</item>
+    </string-array>
+
+    <string name="interstitial_ad_sample" translatable="false">Interstitial Ad Sample</string>
+    <string name="start_level" translatable="false">Level 1</string>
+    <string name="next_level" translatable="false">Next Level</string>
+    <!-- -
+        This is an ad unit ID for an interstitial test ad. Replace with your own interstitial ad unit id.
+        For more information, see https://support.google.com/admob/answer/3052638
+    <!- -->
+    <string name="interstitial_ad_unit_id" translatable="false">ca-app-pub-4746413298091769/9789676732</string>
+    <string name="interstitial_ad_unit_id2" translatable="false">ca-app-pub-4746413298091769/4279586331</string>
+    <string name="title_activity_activated_full">Activated Full</string>
+    <string name="title_activity_send_mail">Support</string>
+    <string name="title_activity_about_app">About App</string>
+
+</resources>

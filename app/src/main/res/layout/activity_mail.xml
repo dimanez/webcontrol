@@ -1,0 +1,71 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context="net.webcontrol.app.siteparserfinal.MailParser">
+
+    <Button
+        android:id="@+id/parseM"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Получить данные"
+        android:layout_alignRight="@+id/listViewDataM"
+        android:layout_alignEnd="@+id/listViewDataM"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:background="#333333"
+        android:textColor="#acacac" />
+    <ListView
+        android:id="@+id/listViewDataM"
+        android:layout_width="wrap_content"
+        android:layout_height="fill_parent"
+        android:layout_below="@+id/parseM"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="Count"
+        android:id="@+id/countM"
+        android:layout_alignParentBottom="true"
+        android:layout_alignRight="@+id/listViewDataM"
+        android:layout_alignEnd="@+id/listViewDataM" />
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="History"
+        android:id="@+id/historyM"
+        android:layout_below="@+id/parseM"
+        android:layout_alignRight="@+id/listViewDataM"
+        android:layout_alignEnd="@+id/listViewDataM"
+        android:background="#333333"
+        android:textColor="#acacac"
+        android:visibility="invisible"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="Page: 1"
+        android:id="@+id/pageM"
+        android:layout_above="@+id/countM"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Result: "
+        android:id="@+id/resultM"
+        android:visibility="invisible"
+
+        android:layout_above="@+id/listViewDataM"
+        android:layout_centerHorizontal="true" />
+
+</RelativeLayout>
